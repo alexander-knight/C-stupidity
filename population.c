@@ -10,14 +10,14 @@ int main(void)
   {
       startpop = get_int("Start size (minimum 9): ");
   }
-  while (startpop < 1);
+  while (startpop < 9);
     // TODO: Prompt for end size
  int endpop;
   do
   {
       endpop = get_int("End size (must be higher than start size): ");
   }
-  while (endpop < 1);
+  while (endpop < startpop);
 
 
     // TODO: Calculate number of years until we reach threshold
